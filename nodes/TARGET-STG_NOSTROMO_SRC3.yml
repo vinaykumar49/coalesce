@@ -1,0 +1,92 @@
+steps:
+  STG_NOSTROMO_SRC3-d6f17959-12ab-4b8a-925b-64bf0bd84edb:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: ec25e0f0-fcf9-4c11-a663-4f77d9c9f641
+              stepCounter: d6f17959-12ab-4b8a-925b-64bf0bd84edb
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_CREWKEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6a9d89c2-181e-4737-b6f5-396398cdf710
+                    stepCounter: d38f29f5-2049-4ecd-b06e-05b31b5b1c55
+                transform: ""
+          - columnReference:
+              columnCounter: 49bff1b5-d7ed-4018-bfd5-7301767aeb6e
+              stepCounter: d6f17959-12ab-4b8a-925b-64bf0bd84edb
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_FIRSTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b23f93c0-6152-463d-b06b-bbde90fc1457
+                    stepCounter: d38f29f5-2049-4ecd-b06e-05b31b5b1c55
+                transform: ""
+          - columnReference:
+              columnCounter: 520c9365-41e3-45db-b1e0-9b1f0b14fd33
+              stepCounter: d6f17959-12ab-4b8a-925b-64bf0bd84edb
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_LASTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f8336c5d-1f15-4918-aa15-9d484b2ee3b0
+                    stepCounter: d38f29f5-2049-4ecd-b06e-05b31b5b1c55
+                transform: ""
+          - columnReference:
+              columnCounter: c4f4c9cc-d043-4e6d-9eec-b5f6d2346bbf
+              stepCounter: d6f17959-12ab-4b8a-925b-64bf0bd84edb
+            dataType: VARCHAR(152)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_COMMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 75c2dd12-b898-4747-86c3-96643f790eba
+                    stepCounter: d38f29f5-2049-4ecd-b06e-05b31b5b1c55
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: NOSTROMO_SRC3
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'NOSTROMO_SRC3') }} "NOSTROMO_SRC3"
+            name: STG_NOSTROMO_SRC3
+            noLinkRefs: []
+      name: STG_NOSTROMO_SRC3
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: d6f17959-12ab-4b8a-925b-64bf0bd84edb
