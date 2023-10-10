@@ -1,0 +1,140 @@
+steps:
+  FCT_NOSTROMO_SRC2-50e736c0-a445-4eff-b430-d814d2e86317:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: aa45c6e9-1f72-4413-b096-a374239472ab
+              stepCounter: 50e736c0-a445-4eff-b430-d814d2e86317
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_CREWKEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6a5f33dd-3691-4bb6-be36-b60e96dfe3da
+                    stepCounter: 03e01a47-2113-4365-b86a-b18bc1b567c4
+                transform: ""
+          - columnReference:
+              columnCounter: b2055904-3673-4f37-a113-af61ad658757
+              stepCounter: 50e736c0-a445-4eff-b430-d814d2e86317
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_FIRSTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3afb070c-83da-475c-83df-34896baae808
+                    stepCounter: 03e01a47-2113-4365-b86a-b18bc1b567c4
+                transform: ""
+          - columnReference:
+              columnCounter: 0e9c0ede-32ad-4ab3-b964-62c67a951a2b
+              stepCounter: 50e736c0-a445-4eff-b430-d814d2e86317
+            dataType: VARCHAR(1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_MIDDLEINITIAL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8acc187b-52f6-48bb-a2c3-fe3e991f1824
+                    stepCounter: 03e01a47-2113-4365-b86a-b18bc1b567c4
+                transform: ""
+          - columnReference:
+              columnCounter: e6a5f61e-eb69-45d5-a995-402cc7afc54c
+              stepCounter: 50e736c0-a445-4eff-b430-d814d2e86317
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_LASTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0b543f54-f5e5-4bb7-a279-53a11cc3a60d
+                    stepCounter: 03e01a47-2113-4365-b86a-b18bc1b567c4
+                transform: ""
+          - columnReference:
+              columnCounter: d65a40b8-4a32-4e7f-977d-15009f489101
+              stepCounter: 50e736c0-a445-4eff-b430-d814d2e86317
+            dataType: VARCHAR(152)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_COMMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 25de5013-a5ab-4653-9b17-9e0b9efdacfa
+                    stepCounter: 03e01a47-2113-4365-b86a-b18bc1b567c4
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 778d3141-074d-4830-b7df-ded4f9794ab6
+              stepCounter: 50e736c0-a445-4eff-b430-d814d2e86317
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9698bbc8-37bd-4ca3-9ad4-ba0af403c7dd
+              stepCounter: 50e736c0-a445-4eff-b430-d814d2e86317
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_NOSTROMO_SRC2
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'STG_NOSTROMO_SRC2') }} "STG_NOSTROMO_SRC2"
+            name: FCT_NOSTROMO_SRC2
+            noLinkRefs: []
+      name: FCT_NOSTROMO_SRC2
+      overrideSQL: false
+      schema: ""
+      sqlType: Fact
+      type: sql
+    stepCounter: 50e736c0-a445-4eff-b430-d814d2e86317
