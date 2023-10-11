@@ -12,6 +12,11 @@ locations:
       "10":
         database: SNOWFLAKE_SAMPLE_DATA
         schema: TPCH_SF1
+  SOURCE_MAIN:
+    mappingDefinitions:
+      "10":
+        database: ""
+        schema: ""
   TARGET:
     mappingDefinitions:
       "10":
