@@ -45,20 +45,6 @@ steps:
                     stepCounter: d528b51a-028b-4c21-b64f-c81efb9368cd
                 transform: ""
           - columnReference:
-              columnCounter: c7f526cc-c585-4fa2-984b-cad71dae9286
-              stepCounter: f7f4e8d7-137d-44f8-ad3e-003084d6b13d
-            dataType: VARCHAR(40)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: C_ADDRESS
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: d14c17c0-964e-41f4-a1d6-270da1d202b2
-                    stepCounter: d528b51a-028b-4c21-b64f-c81efb9368cd
-                transform: ""
-          - columnReference:
               columnCounter: 60ed4f76-bf3b-47c2-a48d-6186d6c1848c
               stepCounter: f7f4e8d7-137d-44f8-ad3e-003084d6b13d
             dataType: NUMBER(38,0)
