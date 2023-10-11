@@ -4,7 +4,7 @@ jobs:
   Job-1:
     excludeSelector: ""
     id: 1
-    includeSelector: ""
+    includeSelector: "{ subgraph: \"Test_Subgraph\" }"
     name: Job_Subgraph
     steps: []
     subgraphs: []
