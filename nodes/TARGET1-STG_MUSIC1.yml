@@ -1,0 +1,176 @@
+steps:
+  STG_MUSIC1-e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: TARGET1
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 9859b1ac-c248-4c46-a57e-887254954f7d
+              stepCounter: e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735
+            dataType: VARIANT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 55a7e40c-9262-48c6-8e0a-af68c7298595
+                    stepCounter: eab63a49-ff3d-417b-ad19-b26cb77a8faf
+                transform: ""
+          - columnReference:
+              columnCounter: c0b8f888-ef4a-4dc7-80d9-92b6b6d32ace
+              stepCounter: e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: catalog_date
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: aa436ff4-e71d-412f-be83-f37b54dc22ec
+                    stepCounter: eab63a49-ff3d-417b-ad19-b26cb77a8faf
+                transform: ""
+          - columnReference:
+              columnCounter: 0fa45943-6c75-4f55-a2a5-ab2c6c034b81
+              stepCounter: e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: catalog_issue
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b86c76f7-1635-4a1f-849d-b5a7984864e1
+                    stepCounter: eab63a49-ff3d-417b-ad19-b26cb77a8faf
+                transform: ""
+          - columnReference:
+              columnCounter: db71d362-bad9-470e-b98a-e45ca7569c65
+              stepCounter: e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: catalog_cd_id
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2bc6e87b-61f3-476c-99bb-f2e87032b370
+                    stepCounter: eab63a49-ff3d-417b-ad19-b26cb77a8faf
+                transform: ""
+          - columnReference:
+              columnCounter: c4dff0b7-901e-45d0-b062-8642c03fd3a9
+              stepCounter: e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: catalog_cd_title
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3180a515-c448-4dc6-8089-98b6c3bffd6d
+                    stepCounter: eab63a49-ff3d-417b-ad19-b26cb77a8faf
+                transform: ""
+          - columnReference:
+              columnCounter: 1bfe92bb-dc9e-4929-9163-60e1643c886a
+              stepCounter: e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: catalog_cd_genre
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8d8bbba4-0f3d-4c61-b55e-d2740cdf5a2f
+                    stepCounter: eab63a49-ff3d-417b-ad19-b26cb77a8faf
+                transform: ""
+          - columnReference:
+              columnCounter: a50bcec6-bd71-49f2-9042-e79acdeabb81
+              stepCounter: e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: catalog_cd_artist
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d61c20e4-0cc9-4d9f-a4e4-9b15cab679c8
+                    stepCounter: eab63a49-ff3d-417b-ad19-b26cb77a8faf
+                transform: ""
+          - columnReference:
+              columnCounter: ed1e1185-17e9-4606-aef1-36b49ff00bf6
+              stepCounter: e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: catalog_cd_publish_date
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e311c85a-077c-42ac-98ec-8e22248b0627
+                    stepCounter: eab63a49-ff3d-417b-ad19-b26cb77a8faf
+                transform: ""
+          - columnReference:
+              columnCounter: 09ba71e0-43a9-48dd-8093-9a04c086db5f
+              stepCounter: e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: catalog_cd_price
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a0d56c09-f532-4b63-b337-c77e5c77352b
+                    stepCounter: eab63a49-ff3d-417b-ad19-b26cb77a8faf
+                transform: ""
+          - columnReference:
+              columnCounter: 1c09fbac-700c-4fac-8cb8-14af20831b4d
+              stepCounter: e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: catalog_cd_description
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a506f75f-9283-44eb-a8a3-b84fd5530a86
+                    stepCounter: eab63a49-ff3d-417b-ad19-b26cb77a8faf
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET1
+                nodeName: STG_MUSIC
+            join:
+              joinCondition: FROM {{ ref('TARGET1', 'STG_MUSIC') }} "STG_MUSIC"
+            name: STG_MUSIC1
+            noLinkRefs: []
+      name: STG_MUSIC1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: e19b2c34-68c9-42a8-9a8b-8e4fe2ba6735

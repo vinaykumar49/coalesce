@@ -1,0 +1,98 @@
+steps:
+  STG_ORDERS1-573d8df0-9362-4512-a0cb-5dc797c87d76:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: Orders data as defined by TPC-H
+      isMultisource: false
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: efbfc302-afe0-4f6f-91a8-356158b70288
+              stepCounter: 573d8df0-9362-4512-a0cb-5dc797c87d76
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 865fe7d7-7b1c-4153-aa28-ef8661862c38
+                    stepCounter: ccae812e-a1d0-4f57-bcf2-5178705aaedc
+                transform: ""
+          - columnReference:
+              columnCounter: 4143933a-8e86-426b-a3cb-bb03a30bac08
+              stepCounter: 573d8df0-9362-4512-a0cb-5dc797c87d76
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_CUSTKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7469e4c7-874c-4e50-a1de-9cdb678fe592
+                    stepCounter: ccae812e-a1d0-4f57-bcf2-5178705aaedc
+                transform: ""
+          - columnReference:
+              columnCounter: f243d7e8-da40-4e56-aa5d-67e530b4066a
+              stepCounter: 573d8df0-9362-4512-a0cb-5dc797c87d76
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_TOTALPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: bf7cca87-7dac-4915-b2b6-7cfd07224b48
+                    stepCounter: ccae812e-a1d0-4f57-bcf2-5178705aaedc
+                transform: ""
+          - columnReference:
+              columnCounter: 7d091f79-96d8-40a8-9337-cee35f34e12b
+              stepCounter: 573d8df0-9362-4512-a0cb-5dc797c87d76
+            dataType: NUMBER
+            description: ""
+            name: DIM_CUSTOMER_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1bf3df4c-5a8a-48fc-b399-93a4a4e01fad
+                    stepCounter: 6ce88bdd-98e4-48cf-904a-667f7bbf0f1a
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              DIM_CUSTOMER: 6ce88bdd-98e4-48cf-904a-667f7bbf0f1a
+              ORDERS: ccae812e-a1d0-4f57-bcf2-5178705aaedc
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: ORDERS
+              - locationName: TARGET
+                nodeName: DIM_CUSTOMER
+            join:
+              joinCondition: |-
+                FROM {{ ref('SOURCE', 'ORDERS') }} "ORDERS"
+                LEFT JOIN {{ ref('TARGET', 'DIM_CUSTOMER') }} "DIM_CUSTOMER"
+                ON "ORDERS"."O_CUSTKEY" = "DIM_CUSTOMER"."DIM_CUSTOMER_KEY"
+            name: STG_ORDERS1
+            noLinkRefs: []
+      name: STG_ORDERS1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 573d8df0-9362-4512-a0cb-5dc797c87d76

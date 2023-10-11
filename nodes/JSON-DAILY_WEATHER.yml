@@ -1,0 +1,49 @@
+steps:
+  DAILY_WEATHER-97ec277f-2745-48d5-ba03-2aeb71a40aa0:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: JSON
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7e10f3d9-a97e-4884-abd5-9a33200a4fca
+              stepCounter: 97ec277f-2745-48d5-ba03-2aeb71a40aa0
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: V
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: fa5327de-762b-401a-8420-cee6d47efb76
+              stepCounter: 97ec277f-2745-48d5-ba03-2aeb71a40aa0
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: T
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('JSON', 'DAILY_WEATHER') }}
+      name: DAILY_WEATHER
+      schema: ""
+      sqlType: Source
+      table: DAILY_WEATHER
+      type: sourceInput
+    stepCounter: 97ec277f-2745-48d5-ba03-2aeb71a40aa0

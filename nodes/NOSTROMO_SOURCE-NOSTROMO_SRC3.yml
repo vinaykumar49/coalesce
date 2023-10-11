@@ -1,0 +1,79 @@
+steps:
+  NOSTROMO_SRC3-d8350f3f-9b86-4a14-b938-2b36626d7353:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: NOSTROMO_SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 82a1180b-c881-4687-8cc7-040d918d3759
+              stepCounter: d8350f3f-9b86-4a14-b938-2b36626d7353
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_CREWKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8a921240-d8fc-4f5b-bc8d-a3901b992f6b
+              stepCounter: d8350f3f-9b86-4a14-b938-2b36626d7353
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: N_FIRSTNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 529312b4-1882-4a15-a46c-d45885f5b046
+              stepCounter: d8350f3f-9b86-4a14-b938-2b36626d7353
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: N_LASTNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: debfad2c-623b-4c88-95bd-7a1dea26f809
+              stepCounter: d8350f3f-9b86-4a14-b938-2b36626d7353
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: N_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('NOSTROMO_SOURCE', 'NOSTROMO_SRC3') }}
+      name: NOSTROMO_SRC3
+      schema: ""
+      sqlType: Source
+      table: NOSTROMO_SRC3
+      type: sourceInput
+    stepCounter: d8350f3f-9b86-4a14-b938-2b36626d7353
