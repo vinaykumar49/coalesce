@@ -31,48 +31,6 @@ steps:
                     stepCounter: 5c254364-4be9-4d57-9105-7459de94dbb2
                 transform: ""
           - columnReference:
-              columnCounter: e8e7134f-57ca-4021-84ee-3620de491296
-              stepCounter: c6e22a13-685e-438d-b9ff-212e3ebb2d0a
-            dataType: NUMBER(38,0)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: O_CUSTKEY
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 5260d632-6ce5-4c0a-8ad1-e0b7a88c6ad3
-                    stepCounter: 5c254364-4be9-4d57-9105-7459de94dbb2
-                transform: ""
-          - columnReference:
-              columnCounter: c21ad24a-5c85-41fa-95ac-7f42e04ad7ca
-              stepCounter: c6e22a13-685e-438d-b9ff-212e3ebb2d0a
-            dataType: VARCHAR(1)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: O_ORDERSTATUS
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 8f1ae551-c0c3-486f-a916-4c3bc821fb67
-                    stepCounter: 5c254364-4be9-4d57-9105-7459de94dbb2
-                transform: ""
-          - columnReference:
-              columnCounter: e003cb4a-2de3-4c4e-b972-168fd7493b0e
-              stepCounter: c6e22a13-685e-438d-b9ff-212e3ebb2d0a
-            dataType: NUMBER(12,2)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: O_TOTALPRICE
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 7ab4abe5-c034-4b25-b590-068182e37b75
-                    stepCounter: 5c254364-4be9-4d57-9105-7459de94dbb2
-                transform: ""
-          - columnReference:
               columnCounter: ae991ca6-21fa-4998-8d1c-531799f24931
               stepCounter: c6e22a13-685e-438d-b9ff-212e3ebb2d0a
             dataType: DATE
