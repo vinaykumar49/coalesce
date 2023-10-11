@@ -1,7 +1,22 @@
-defaultStorageMapping: TARGET
+defaultStorageMapping: MCAMAINBRANCH
 installedPackages: {}
 jobs: {}
-locations: {}
+locations:
+  MCAMAINBRANCH:
+    mappingDefinitions:
+      "10":
+        database: QAENVIRONMENT1
+        schema: QATESTING1
+  SOURCE:
+    mappingDefinitions:
+      "10":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
+  TARGET:
+    mappingDefinitions:
+      "10":
+        database: COALESCE_SAMPLE_DATA
+        schema: PUBLIC
 macros: {}
 packages: {}
 projects: {}
