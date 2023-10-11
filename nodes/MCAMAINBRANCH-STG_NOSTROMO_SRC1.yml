@@ -1,5 +1,5 @@
 steps:
-  STG_NOSTROMO_SRC3-d6f17959-12ab-4b8a-925b-64bf0bd84edb:
+  STG_NOSTROMO_SRC1-4c210ed2-0705-4d99-94eb-5ff878b0599a:
     operation:
       config:
         insertStrategy: INSERT
@@ -11,14 +11,14 @@ steps:
       deployEnabled: true
       description: ""
       isMultisource: false
-      locationName: TARGET
+      locationName: MCAMAINBRANCH
       materializationType: table
       metadata:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: ec25e0f0-fcf9-4c11-a663-4f77d9c9f641
-              stepCounter: d6f17959-12ab-4b8a-925b-64bf0bd84edb
+              columnCounter: 8abf804c-8a04-4861-9f05-e73226ca382e
+              stepCounter: 4c210ed2-0705-4d99-94eb-5ff878b0599a
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -27,12 +27,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6a9d89c2-181e-4737-b6f5-396398cdf710
-                    stepCounter: d38f29f5-2049-4ecd-b06e-05b31b5b1c55
+                  - columnCounter: 659a5fa4-ea6f-4a2c-93fc-511270c1abd1
+                    stepCounter: 066799ca-1505-49ab-ac9c-327cf138c9a9
                 transform: ""
           - columnReference:
-              columnCounter: 49bff1b5-d7ed-4018-bfd5-7301767aeb6e
-              stepCounter: d6f17959-12ab-4b8a-925b-64bf0bd84edb
+              columnCounter: 3f8d955e-37a8-46ad-bc71-ca36fb922584
+              stepCounter: 4c210ed2-0705-4d99-94eb-5ff878b0599a
             dataType: VARCHAR(50)
             description: ""
             hashColumns: []
@@ -41,12 +41,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b23f93c0-6152-463d-b06b-bbde90fc1457
-                    stepCounter: d38f29f5-2049-4ecd-b06e-05b31b5b1c55
+                  - columnCounter: 33e038cd-9aa1-49be-ba65-f3ec731a5bf9
+                    stepCounter: 066799ca-1505-49ab-ac9c-327cf138c9a9
                 transform: ""
           - columnReference:
-              columnCounter: 520c9365-41e3-45db-b1e0-9b1f0b14fd33
-              stepCounter: d6f17959-12ab-4b8a-925b-64bf0bd84edb
+              columnCounter: b5454681-2420-48f0-b3ab-053038929ed7
+              stepCounter: 4c210ed2-0705-4d99-94eb-5ff878b0599a
             dataType: VARCHAR(50)
             description: ""
             hashColumns: []
@@ -55,12 +55,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: f8336c5d-1f15-4918-aa15-9d484b2ee3b0
-                    stepCounter: d38f29f5-2049-4ecd-b06e-05b31b5b1c55
+                  - columnCounter: ed447ced-37e0-4e28-ac23-b7e2b109c7db
+                    stepCounter: 066799ca-1505-49ab-ac9c-327cf138c9a9
                 transform: ""
           - columnReference:
-              columnCounter: c4f4c9cc-d043-4e6d-9eec-b5f6d2346bbf
-              stepCounter: d6f17959-12ab-4b8a-925b-64bf0bd84edb
+              columnCounter: 412e2abf-0ee4-4ff1-9caf-e260d83b3908
+              stepCounter: 4c210ed2-0705-4d99-94eb-5ff878b0599a
             dataType: VARCHAR(152)
             description: ""
             hashColumns: []
@@ -69,8 +69,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75c2dd12-b898-4747-86c3-96643f790eba
-                    stepCounter: d38f29f5-2049-4ecd-b06e-05b31b5b1c55
+                  - columnCounter: cfdf2b31-8eaa-48f2-9d8f-24e6e0adeb6d
+                    stepCounter: 066799ca-1505-49ab-ac9c-327cf138c9a9
                 transform: ""
         cteString: ""
         enabledColumnTestIDs: []
@@ -79,14 +79,14 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: SOURCE
-                nodeName: NOSTROMO_SRC3
+                nodeName: NOSTROMO_SRC1
             join:
-              joinCondition: FROM {{ ref('SOURCE', 'NOSTROMO_SRC3') }} "NOSTROMO_SRC3"
-            name: STG_NOSTROMO_SRC3
+              joinCondition: FROM {{ ref('SOURCE', 'NOSTROMO_SRC1') }} "NOSTROMO_SRC1"
+            name: STG_NOSTROMO_SRC1
             noLinkRefs: []
-      name: STG_NOSTROMO_SRC3
+      name: STG_NOSTROMO_SRC1
       overrideSQL: false
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: d6f17959-12ab-4b8a-925b-64bf0bd84edb
+    stepCounter: 4c210ed2-0705-4d99-94eb-5ff878b0599a
