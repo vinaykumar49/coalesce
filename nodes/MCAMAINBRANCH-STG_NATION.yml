@@ -43,7 +43,7 @@ steps:
               - columnReferences:
                   - columnCounter: d3594272-d9c4-42ef-afc0-eb0e30bf59e2
                     stepCounter: 73b4d589-b4b7-4a49-81b7-f2b90c5b42f4
-                transform: ""
+                transform: lower("STG_NATION"."N_NAME")
           - columnReference:
               columnCounter: cd404b58-7085-4deb-aff7-6b8fe7a26419
               stepCounter: 5c4f00ae-fb22-412c-a55e-5349c048a589
