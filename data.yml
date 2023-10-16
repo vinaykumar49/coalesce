@@ -8,7 +8,17 @@ jobs:
     name: job_movie
     steps: []
     subgraphs: []
-locations: {}
+locations:
+  SOURCE_DEV:
+    mappingDefinitions:
+      "13":
+        database: FACTDB
+        schema: PUBLIC
+  TARGET_DEV:
+    mappingDefinitions:
+      "13":
+        database: FACTDB
+        schema: QAOBJECTS
 macros: {}
 packages: {}
 projects: {}
