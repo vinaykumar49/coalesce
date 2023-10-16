@@ -1,13 +1,6 @@
 defaultStorageMapping: TARGET_DEV
 installedPackages: {}
-jobs:
-  Job-2:
-    excludeSelector: ""
-    id: 2
-    includeSelector: "{ subgraph: \"stage_movie\" }"
-    name: job_movie
-    steps: []
-    subgraphs: []
+jobs: {}
 locations:
   SOURCE_DEV:
     mappingDefinitions:
@@ -1482,12 +1475,12 @@ stepTypes:
     name: Persistent Stage
     version: 1
 subgraphs:
-  Subgraph-3:
-    id: "3"
-    name: stage_movie
+  Subgraph-4:
+    id: "4"
+    name: Movie_Subgraph
     steps:
       - e20751f0-1439-4d87-ace9-166c7a17d7e4
       - 1a13a224-2200-4e4e-b656-03eebbe90b29
-      - e87120a3-a663-430b-9646-414de0247d2a
-      - 8c1dd42c-d4a6-443f-82da-8ce3d1ad1087
+      - c1a551ca-9f82-4357-b1d5-b6b395993af0
+      - e4c0b82b-a354-4331-92e6-c93afcb6cfa6
 version: 2

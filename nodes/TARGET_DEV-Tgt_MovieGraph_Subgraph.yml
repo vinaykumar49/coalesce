@@ -1,5 +1,5 @@
 steps:
-  STG_MOVIECOLLECTION_SUBGRAPH-e87120a3-a663-430b-9646-414de0247d2a:
+  Tgt_MovieGraph_Subgraph-c1a551ca-9f82-4357-b1d5-b6b395993af0:
     operation:
       config:
         insertStrategy: INSERT
@@ -17,8 +17,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 31aa7c17-41a9-4cea-a5bd-92a70ea8a23c
-              stepCounter: e87120a3-a663-430b-9646-414de0247d2a
+              columnCounter: 0b01a2c8-c3ce-41e6-b1d7-4c96424f33ae
+              stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -31,8 +31,8 @@ steps:
                     stepCounter: e20751f0-1439-4d87-ace9-166c7a17d7e4
                 transform: ""
           - columnReference:
-              columnCounter: cc8a550e-1f34-475d-ab9d-90c546c63a91
-              stepCounter: e87120a3-a663-430b-9646-414de0247d2a
+              columnCounter: c41aa52c-d5fb-43b3-b15e-9d8616e11ce7
+              stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -45,8 +45,8 @@ steps:
                     stepCounter: e20751f0-1439-4d87-ace9-166c7a17d7e4
                 transform: ""
           - columnReference:
-              columnCounter: 06d9d147-52ab-47ce-802f-c01f81e5d97a
-              stepCounter: e87120a3-a663-430b-9646-414de0247d2a
+              columnCounter: 0d712339-91c0-4e09-a0ba-8789470a56b7
+              stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -59,8 +59,8 @@ steps:
                     stepCounter: e20751f0-1439-4d87-ace9-166c7a17d7e4
                 transform: ""
           - columnReference:
-              columnCounter: 0e22ff7b-0432-438c-ab17-9580017c9525
-              stepCounter: e87120a3-a663-430b-9646-414de0247d2a
+              columnCounter: 080342ae-f628-4952-bc3e-f3cc5b9d56a6
+              stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -73,8 +73,8 @@ steps:
                     stepCounter: e20751f0-1439-4d87-ace9-166c7a17d7e4
                 transform: ""
           - columnReference:
-              columnCounter: e980732f-e93e-483f-a0cf-038679a31daf
-              stepCounter: e87120a3-a663-430b-9646-414de0247d2a
+              columnCounter: c77d51e0-0360-492a-84ca-84f7e26fd0de
+              stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -87,8 +87,8 @@ steps:
                     stepCounter: e20751f0-1439-4d87-ace9-166c7a17d7e4
                 transform: ""
           - columnReference:
-              columnCounter: 7d8f48fb-89f2-45fb-9c42-c93ef3d1e1d7
-              stepCounter: e87120a3-a663-430b-9646-414de0247d2a
+              columnCounter: 1d3e67ab-dd92-43ae-b04a-5fcc8c88f164
+              stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
             dataType: VARCHAR(16777216)
             description: ""
             hashColumns: []
@@ -110,11 +110,11 @@ steps:
                 nodeName: MOVIECOLLECTION
             join:
               joinCondition: FROM {{ ref('SOURCE_DEV', 'MOVIECOLLECTION') }} "MOVIECOLLECTION"
-            name: STG_MOVIECOLLECTION_SUBGRAPH
+            name: Tgt_MovieGraph_Subgraph
             noLinkRefs: []
-      name: STG_MOVIECOLLECTION_SUBGRAPH
+      name: Tgt_MovieGraph_Subgraph
       overrideSQL: false
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: e87120a3-a663-430b-9646-414de0247d2a
+    stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0

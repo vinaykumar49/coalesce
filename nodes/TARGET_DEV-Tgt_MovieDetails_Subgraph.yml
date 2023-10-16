@@ -1,5 +1,5 @@
 steps:
-  STG_MOVIEDETAILS_SUBGRAPH-8c1dd42c-d4a6-443f-82da-8ce3d1ad1087:
+  Tgt_MovieDetails_Subgraph-e4c0b82b-a354-4331-92e6-c93afcb6cfa6:
     operation:
       config:
         insertStrategy: INSERT
@@ -17,8 +17,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 8bd984a4-06b6-4cc1-bdbb-e9cb9d5aa225
-              stepCounter: 8c1dd42c-d4a6-443f-82da-8ce3d1ad1087
+              columnCounter: 5268898d-8f90-4095-8511-32b198c8c312
+              stepCounter: e4c0b82b-a354-4331-92e6-c93afcb6cfa6
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -31,8 +31,8 @@ steps:
                     stepCounter: 1a13a224-2200-4e4e-b656-03eebbe90b29
                 transform: ""
           - columnReference:
-              columnCounter: 443cdacc-cf4c-411a-a7a3-79b195195642
-              stepCounter: 8c1dd42c-d4a6-443f-82da-8ce3d1ad1087
+              columnCounter: 6d1be953-02b7-480d-bd18-b4956c82f302
+              stepCounter: e4c0b82b-a354-4331-92e6-c93afcb6cfa6
             dataType: VARCHAR(16777216)
             description: ""
             hashColumns: []
@@ -45,8 +45,8 @@ steps:
                     stepCounter: 1a13a224-2200-4e4e-b656-03eebbe90b29
                 transform: ""
           - columnReference:
-              columnCounter: 2a7fc17c-9440-4591-bdeb-32afccb4fc08
-              stepCounter: 8c1dd42c-d4a6-443f-82da-8ce3d1ad1087
+              columnCounter: ace0eae8-62ba-43ca-bc9d-b83cb3ff99c5
+              stepCounter: e4c0b82b-a354-4331-92e6-c93afcb6cfa6
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -68,11 +68,11 @@ steps:
                 nodeName: MOVIEDETAILS
             join:
               joinCondition: FROM {{ ref('SOURCE_DEV', 'MOVIEDETAILS') }} "MOVIEDETAILS"
-            name: STG_MOVIEDETAILS_SUBGRAPH
+            name: Tgt_MovieDetails_Subgraph
             noLinkRefs: []
-      name: STG_MOVIEDETAILS_SUBGRAPH
+      name: Tgt_MovieDetails_Subgraph
       overrideSQL: false
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 8c1dd42c-d4a6-443f-82da-8ce3d1ad1087
+    stepCounter: e4c0b82b-a354-4331-92e6-c93afcb6cfa6
