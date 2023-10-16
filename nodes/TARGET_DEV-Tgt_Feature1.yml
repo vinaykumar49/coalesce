@@ -1,0 +1,120 @@
+steps:
+  Tgt_Feature1-25795635-a02a-467c-94cc-1ca206791066:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: TARGET_DEV
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 12201d09-e0f4-4044-8adc-60898b03a989
+              stepCounter: 25795635-a02a-467c-94cc-1ca206791066
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MOVIE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0b01a2c8-c3ce-41e6-b1d7-4c96424f33ae
+                    stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
+                transform: ""
+          - columnReference:
+              columnCounter: 2aa50cb9-1069-4107-9b0b-82627a86d6f3
+              stepCounter: 25795635-a02a-467c-94cc-1ca206791066
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: WORLDWIDE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c41aa52c-d5fb-43b3-b15e-9d8616e11ce7
+                    stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
+                transform: ""
+          - columnReference:
+              columnCounter: 1014ab15-7e20-4152-a608-73676bdfccea
+              stepCounter: 25795635-a02a-467c-94cc-1ca206791066
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DOMESTIC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0d712339-91c0-4e09-a0ba-8789470a56b7
+                    stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
+                transform: ""
+          - columnReference:
+              columnCounter: e12a7fb2-af37-473f-9be1-52a34f3eeb87
+              stepCounter: 25795635-a02a-467c-94cc-1ca206791066
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FOREIGN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 080342ae-f628-4952-bc3e-f3cc5b9d56a6
+                    stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
+                transform: ""
+          - columnReference:
+              columnCounter: 8bd5d726-3624-420f-a2c2-c2f082d80227
+              stepCounter: 25795635-a02a-467c-94cc-1ca206791066
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOC_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c77d51e0-0360-492a-84ca-84f7e26fd0de
+                    stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
+                transform: ""
+          - columnReference:
+              columnCounter: 43ba9161-1811-4ce9-92d0-887a32da1b6c
+              stepCounter: 25795635-a02a-467c-94cc-1ca206791066
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOC_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1d3e67ab-dd92-43ae-b04a-5fcc8c88f164
+                    stepCounter: c1a551ca-9f82-4357-b1d5-b6b395993af0
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET_DEV
+                nodeName: Tgt_MovieGraph_Subgraph
+            join:
+              joinCondition: FROM {{ ref('TARGET_DEV', 'Tgt_MovieGraph_Subgraph') }} "Tgt_MovieGraph_Subgraph"
+            name: Tgt_Feature1
+            noLinkRefs: []
+      name: Tgt_Feature1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 25795635-a02a-467c-94cc-1ca206791066
