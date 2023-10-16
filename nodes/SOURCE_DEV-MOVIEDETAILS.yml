@@ -1,0 +1,64 @@
+steps:
+  MOVIEDETAILS-1a13a224-2200-4e4e-b656-03eebbe90b29:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: SOURCE_DEV
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6c7267ff-2be8-499f-a776-d8d599b0a429
+              stepCounter: 1a13a224-2200-4e4e-b656-03eebbe90b29
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: MOVIE_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 00c33617-9492-492e-b806-59eff33efb44
+              stepCounter: 1a13a224-2200-4e4e-b656-03eebbe90b29
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: MOVIENAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 20328aa5-81ba-4650-8fc6-2b4d9a0000ff
+              stepCounter: 1a13a224-2200-4e4e-b656-03eebbe90b29
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: YEAR
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE_DEV', 'MOVIEDETAILS') }}
+      name: MOVIEDETAILS
+      schema: ""
+      sqlType: Source
+      table: MOVIEDETAILS
+      type: sourceInput
+    stepCounter: 1a13a224-2200-4e4e-b656-03eebbe90b29

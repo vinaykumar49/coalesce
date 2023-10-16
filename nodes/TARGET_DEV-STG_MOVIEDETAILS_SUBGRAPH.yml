@@ -1,0 +1,78 @@
+steps:
+  STG_MOVIEDETAILS_SUBGRAPH-8c1dd42c-d4a6-443f-82da-8ce3d1ad1087:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: TARGET_DEV
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 8bd984a4-06b6-4cc1-bdbb-e9cb9d5aa225
+              stepCounter: 8c1dd42c-d4a6-443f-82da-8ce3d1ad1087
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MOVIE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6c7267ff-2be8-499f-a776-d8d599b0a429
+                    stepCounter: 1a13a224-2200-4e4e-b656-03eebbe90b29
+                transform: ""
+          - columnReference:
+              columnCounter: 443cdacc-cf4c-411a-a7a3-79b195195642
+              stepCounter: 8c1dd42c-d4a6-443f-82da-8ce3d1ad1087
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MOVIENAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 00c33617-9492-492e-b806-59eff33efb44
+                    stepCounter: 1a13a224-2200-4e4e-b656-03eebbe90b29
+                transform: ""
+          - columnReference:
+              columnCounter: 2a7fc17c-9440-4591-bdeb-32afccb4fc08
+              stepCounter: 8c1dd42c-d4a6-443f-82da-8ce3d1ad1087
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 20328aa5-81ba-4650-8fc6-2b4d9a0000ff
+                    stepCounter: 1a13a224-2200-4e4e-b656-03eebbe90b29
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE_DEV
+                nodeName: MOVIEDETAILS
+            join:
+              joinCondition: FROM {{ ref('SOURCE_DEV', 'MOVIEDETAILS') }} "MOVIEDETAILS"
+            name: STG_MOVIEDETAILS_SUBGRAPH
+            noLinkRefs: []
+      name: STG_MOVIEDETAILS_SUBGRAPH
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 8c1dd42c-d4a6-443f-82da-8ce3d1ad1087

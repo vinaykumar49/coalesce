@@ -1,0 +1,140 @@
+steps:
+  STG_MOVIECOLLECTION-d8a3dfbf-a19f-4ff1-aed2-bfd25b8f160d:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: TARGET_DEV
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 37ad51c4-f074-4762-bbae-b57ddcfc8c8d
+              stepCounter: d8a3dfbf-a19f-4ff1-aed2-bfd25b8f160d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: WORLDWIDE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1f83e5f6-bbda-47c5-903d-94664b3b8a16
+                    stepCounter: e20751f0-1439-4d87-ace9-166c7a17d7e4
+                transform: ""
+          - columnReference:
+              columnCounter: 87a4ee71-55af-4fe5-9f1e-550e0c6e2b65
+              stepCounter: d8a3dfbf-a19f-4ff1-aed2-bfd25b8f160d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MOVIE_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3bd1c3ba-7be9-4248-ae1e-f0bdd695c089
+                    stepCounter: e20751f0-1439-4d87-ace9-166c7a17d7e4
+                transform: ""
+          - columnReference:
+              columnCounter: 5091109b-e4c0-4169-80a1-437c86436b1b
+              stepCounter: d8a3dfbf-a19f-4ff1-aed2-bfd25b8f160d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DOMESTIC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3abac53d-1fc4-4c96-9e60-b5401f52ab1b
+                    stepCounter: e20751f0-1439-4d87-ace9-166c7a17d7e4
+                transform: ""
+          - columnReference:
+              columnCounter: 8cbf851d-4bbf-4080-87c8-1f3311f005d7
+              stepCounter: d8a3dfbf-a19f-4ff1-aed2-bfd25b8f160d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FOREIGN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 40a59a63-efbb-4174-b275-b2ef15cd0d3b
+                    stepCounter: e20751f0-1439-4d87-ace9-166c7a17d7e4
+                transform: ""
+          - columnReference:
+              columnCounter: 43d47b95-339d-4c22-8aca-5d3ee2d46a53
+              stepCounter: d8a3dfbf-a19f-4ff1-aed2-bfd25b8f160d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOC_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0fe06596-7733-4c83-808f-e8b461b74c05
+                    stepCounter: e20751f0-1439-4d87-ace9-166c7a17d7e4
+                transform: ""
+          - columnReference:
+              columnCounter: eb63b873-b678-4b3f-a632-71cf18528a97
+              stepCounter: d8a3dfbf-a19f-4ff1-aed2-bfd25b8f160d
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOC_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 37a683b3-7ba1-42b5-968e-ff4d3d7fd8a7
+                    stepCounter: e20751f0-1439-4d87-ace9-166c7a17d7e4
+                transform: UPPER(LOC_NAME)
+          - columnReference:
+              columnCounter: 9726abda-9b2f-4fef-8643-b1cf4db16966
+              stepCounter: d8a3dfbf-a19f-4ff1-aed2-bfd25b8f160d
+            dataType: NUMBER
+            description: ""
+            name: DIM_MOVIEDETAILS_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c2987e99-b225-4961-9e05-67193d1231c9
+                    stepCounter: 8323c1e2-a192-4fe6-8b42-8efacb62d343
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              DIM_MOVIEDETAILS: 8323c1e2-a192-4fe6-8b42-8efacb62d343
+              MOVIECOLLECTION: e20751f0-1439-4d87-ace9-166c7a17d7e4
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE_DEV
+                nodeName: MOVIECOLLECTION
+              - locationName: TARGET_DEV
+                nodeName: DIM_MOVIEDETAILS
+            join:
+              joinCondition: |-
+                FROM {{ ref('SOURCE_DEV', 'MOVIECOLLECTION') }} "MOVIECOLLECTION"
+                LEFT JOIN {{ ref('TARGET_DEV', 'DIM_MOVIEDETAILS') }} "DIM_MOVIEDETAILS"
+                ON "MOVIECOLLECTION"."MOVIE_ID" = "DIM_MOVIEDETAILS"."DIM_MOVIEDETAILS_KEY"
+            name: STG_MOVIECOLLECTION
+            noLinkRefs: []
+      name: STG_MOVIECOLLECTION
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: d8a3dfbf-a19f-4ff1-aed2-bfd25b8f160d
